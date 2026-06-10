@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Wilow Diallo for editorial, campaign, lookbook, and image direction enquiries."
+    />
+    <title>Contact - Wilow Diallo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wilow Diallo home">
+        <span class="brand-mark">WD</span>
+        <span>Wilow Diallo</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#portfolio">Work</a>
+        <a href="about.html">About</a>
+        <a href="projects/index.html">Project</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h1 id="contact-title">For editorial, campaign, and image direction enquiries</h1>
+          <p>
+            Share the project context, timeline, and the visual world you want to build.
+            The form opens a prepared email to Wilow's studio address.
+          </p>
+          <div class="contact-links">
+            <a class="text-link" href="mailto:contact@sirwilow.com">contact@sirwilow.com</a>
+            <a
+              class="text-link"
+              href="https://www.instagram.com/sir.wilow"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram / @sir.wilow
+            </a>
+          </div>
+        </div>
+
+        <form
+          class="contact-form reveal"
+          action="mailto:contact@sirwilow.com"
+          method="post"
+          enctype="text/plain"
+          data-contact-form
+        >
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Project type
+            <select name="project_type" required>
+              <option value="">Select one</option>
+              <option>Editorial</option>
+              <option>Campaign</option>
+              <option>Lookbook</option>
+              <option>Personal styling</option>
+              <option>Image direction</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Tell us about the brief, timing, location, and references."
+              required
+            ></textarea>
+          </label>
+          <button class="button" type="submit">Send enquiry</button>
+        </form>
+      </section>
+
+      <section class="contact-image-band reveal" aria-label="Contact visual">
+        <img
+          src="assets/selected/guillaume-portrait.jpg"
+          alt="Black-and-white editorial portrait used as a contact page image"
+        />
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-title">Wilow Diallo</p>
+        <p>Fashion Stylist / Editor. Based in Paris. Working everywhere.</p>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="projects/index.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="https://www.instagram.com/sir.wilow" target="_blank" rel="noreferrer">
+            Instagram / @sir.wilow
+          </a>
+          <a href="mailto:contact@sirwilow.com">contact@sirwilow.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

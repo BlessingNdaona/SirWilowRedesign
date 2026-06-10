@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wilow Diallo, Paris-based fashion stylist and editor working across editorial, campaign, and image direction."
+    />
+    <title>Wilow Diallo - Fashion Stylist / Editor</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Wilow Diallo home">
+        <span class="brand-mark">WD</span>
+        <span>Wilow Diallo</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#portfolio">Work</a>
+        <a href="about.html">About</a>
+        <a href="projects/index.html">Project</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--image-led" aria-labelledby="hero-title">
+        <figure class="hero-media reveal">
+          <img
+            src="assets/selected/hero-surrealism.jpg"
+            alt="Wide editorial image with pale blue sculptural styling against a cool studio backdrop"
+          />
+        </figure>
+        <div class="hero-panel reveal">
+          <p class="eyebrow">Paris / Editorial / Campaign / Image Direction</p>
+          <h1 id="hero-title">Styling as visual tension, culture, and silhouette</h1>
+          <p class="hero-signature">
+            Paris-based stylist, working across editorial, campaign, and image direction
+            for houses including Dior, Jacquemus, and Dolce &amp; Gabbana
+          </p>
+          <a class="button" href="#portfolio">View portfolio</a>
+        </div>
+      </section>
+
+      <section class="logo-band reveal" aria-labelledby="client-title">
+        <div class="band-heading">
+          <p class="eyebrow" id="client-title">Selected Clients</p>
+        </div>
+        <div class="logo-grid">
+          <figure class="logo-card">
+            <img src="assets/logos/dior.svg" alt="Dior logo" />
+            <figcaption>Dior</figcaption>
+          </figure>
+          <figure class="logo-card">
+            <img src="assets/logos/dolce-gabbana.svg" alt="Dolce and Gabbana logo" />
+            <figcaption>Dolce &amp; Gabbana</figcaption>
+          </figure>
+          <figure class="logo-card">
+            <img src="assets/logos/fendi.svg" alt="Fendi logo" />
+            <figcaption>Fendi</figcaption>
+          </figure>
+          <figure class="logo-card">
+            <img src="assets/logos/jacquemus.svg" alt="Jacquemus logo" />
+            <figcaption>Jacquemus</figcaption>
+          </figure>
+          <figure class="logo-card">
+            <img src="assets/logos/htsi.svg" alt="HTSI wordmark" />
+            <figcaption>HTSI</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="intro-grid" aria-label="Selected visual direction">
+        <figure class="reveal">
+          <img
+            src="assets/selected/surrealism-red.jpg"
+            alt="Editorial look in black volume with a red sculptural detail"
+          />
+          <figcaption>FW 2024 - Surrealism vs Reality, Palais Royal</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img
+            src="assets/selected/burna-wide.jpg"
+            alt="Campaign portrait in a richly colored interior"
+          />
+          <figcaption>HTSI - Burna Boy, interior portrait direction</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img
+            src="assets/selected/mood-warm.jpg"
+            alt="Warm editorial styling detail with blue leather and red accessories"
+          />
+          <figcaption>Process crop - color pressure and styling detail</figcaption>
+        </figure>
+      </section>
+
+      <section class="manifesto reveal" aria-label="Manifesto">
+        <p>Style is not about following. It is about arriving somewhere no one expected.</p>
+      </section>
+
+      <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="portfolio-title">Editorial, campaign, lookbook, and personal image worlds</h2>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter portfolio categories">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+            All
+          </button>
+          <button class="filter-button" type="button" data-filter="editorial" aria-pressed="false">
+            Editorial
+          </button>
+          <button class="filter-button" type="button" data-filter="campaign" aria-pressed="false">
+            Campaign
+          </button>
+          <button class="filter-button" type="button" data-filter="lookbook" aria-pressed="false">
+            Lookbook
+          </button>
+          <button class="filter-button" type="button" data-filter="personal" aria-pressed="false">
+            Personal work
+          </button>
+        </div>
+
+        <div class="portfolio-masonry">
+          <article class="portfolio-card reveal" data-category="editorial">
+            <a href="projects/work.html?project=surrealism-vs-reality">
+              <img
+                src="assets/selected/surrealism-red.jpg"
+                alt="Surrealism vs Reality full editorial look"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Editorial</p>
+            <h3>FW 2024 - Surrealism vs Reality, Palais Royal</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="campaign">
+            <a href="projects/work.html?project=burna-boy">
+              <img
+                src="assets/selected/burna-wide.jpg"
+                alt="Burna Boy campaign image styled in a warm interior"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Campaign</p>
+            <h3>HTSI - Burna Boy, Lagos interior story</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="lookbook">
+            <a href="projects/work.html?project=guillaume-diop">
+              <img
+                src="assets/selected/guillaume-wide.jpg"
+                alt="Guillaume Diop lookbook image against a white wall"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Lookbook</p>
+            <h3>Guillaume Diop - Tailoring, sunlight, restraint</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="personal">
+            <a href="projects/work.html?project=rodeo-love">
+              <img
+                src="assets/selected/rodeo-love.jpg"
+                alt="Personal work image with a red sculptural garment"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Personal work</p>
+            <h3>Rodeo Love - Shape, attitude, and distance</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="editorial">
+            <a href="projects/work.html?project=merchants-of-venice">
+              <img
+                src="assets/selected/merchants-venice.jpg"
+                alt="Black-and-white editorial portrait in Venice"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Editorial</p>
+            <h3>Merchants of Venice - Man About Town</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="campaign">
+            <a href="projects/work.html?project=burna-boy">
+              <img
+                src="assets/selected/burna-portrait.jpg"
+                alt="Campaign portrait with direct gaze and layered styling"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Campaign</p>
+            <h3>HTSI - Portrait study and styling rhythm</h3>
+          </article>
+
+          <article class="portfolio-card bts reveal" data-category="editorial">
+            <a href="projects/work.html?project=guillaume-diop#process">
+              <img
+                src="assets/selected/guillaume-process.jpg"
+                alt="Behind-the-scenes black-and-white set image"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Behind the scenes</p>
+            <h3>BTS - Light, furniture, and styling composition</h3>
+          </article>
+
+          <article class="portfolio-card bts reveal" data-category="lookbook">
+            <a href="projects/work.html?project=promising-debut">
+              <img
+                src="assets/selected/mood-warm.jpg"
+                alt="Behind-the-scenes styling detail with warm light"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Behind the scenes</p>
+            <h3>BTS - Texture checks and color decisions</h3>
+          </article>
+
+          <article class="portfolio-card reveal" data-category="personal">
+            <a href="projects/work.html?project=wonderland">
+              <img
+                src="assets/selected/wonderland.jpg"
+                alt="Wonderland editorial portrait in a dark jacket"
+              />
+              <span class="project-link">Open project</span>
+            </a>
+            <p class="category">Personal work</p>
+            <h3>Wonderland - Youth, silhouette, and attitude</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof-grid reveal" aria-labelledby="proof-title">
+        <div>
+          <p class="eyebrow">Social Proof</p>
+          <h2 id="proof-title">Trusted by fashion houses, editors, and image makers</h2>
+        </div>
+        <blockquote>
+          <p>
+            Wilow brings a precise eye to proportion, culture, and the emotional charge
+            of a look.
+          </p>
+          <cite>Editorial collaborator</cite>
+        </blockquote>
+      </section>
+
+      <section class="press-strip reveal" aria-label="As seen in">
+        <p>As seen in</p>
+        <figure>
+          <img src="assets/logos/vogue.svg" alt="Vogue logo" />
+          <figcaption>Vogue</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/logos/gentlewoman.svg" alt="The Gentlewoman wordmark" />
+          <figcaption>The Gentlewoman</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/logos/htsi.svg" alt="HTSI wordmark" />
+          <figcaption>HTSI</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/logos/wonderland.svg" alt="Wonderland wordmark" />
+          <figcaption>WONDERLAND</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-title">Wilow Diallo</p>
+        <p>Fashion Stylist / Editor. Based in Paris. Working everywhere.</p>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="#portfolio">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="projects/index.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="https://www.instagram.com/sir.wilow" target="_blank" rel="noreferrer">
+            Instagram / @sir.wilow
+          </a>
+          <a href="mailto:contact@sirwilow.com">contact@sirwilow.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
